@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro da Empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 450px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-row {
+            display: flex;
+            align-items: center;
+        }
+        .form-row label {
+            margin-right: 10px;
+        }
+        .form-row input[type="text"],
+        .form-row input[type="file"] {
+            flex: 1;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-row input[type="file"] {
+            padding: 3px;
+        }
+        .form-container button {
+            padding: 10px;
+            background-color: #ff4800;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .form-container button:hover {
+            background-color: #b35700;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-row">
+                <label for="nome-empresa">Nome da Empresa:</label>
+                <input type="text" id="nome-empresa" name="nome-empresa" required>
+                
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" name="cnpj" required>
+                
+                <label for="arquivo">Enviar Arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo" required>
+                
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+</style>
+</head>
+<body>
+  
